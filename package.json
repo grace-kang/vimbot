@@ -1,0 +1,38 @@
+{
+  "name": "vimbot",
+  "version": "1.0.0",
+  "description": "A VIM cheatsheet in the form of a slack bot",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grace-kang/vimbot"
+  },
+  "keywords": [
+    "slack",
+    "vim",
+    "cheatsheat",
+    "shortcuts",
+    "bot"
+  ],
+  "author": "Grace Kang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grace-kang/vimbot/issues"
+  },
+  "homepage": "https://github.com/grace-kang/vimbot#readme",
+  "engines": {
+    "node": "8.11.1",
+    "npm": "6.1.0"
+  },
+  "dependencies": {
+    "botkit": "^0.6.15",
+    "botkit-storage-mongo": "^1.0.2",
+    "dotenv": "^6.0.0",
+    "mongodb": "^1.4.39",
+    "wordfilter": "^0.2.6"
+  }
+}
