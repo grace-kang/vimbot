@@ -6,9 +6,9 @@ Go to [https://grace-kang.github.io/vimbot] to add VimBot to your workspace.
 
 ## Help
 Type one of the following categories and I will list the VIM commands:  
-    **move** -- Cursor movement  
->**scroll** -- Page scrolling  
->**match** -- Matching parenthesis, square bracket or curly brace  
+>**move** -- Cursor movement  
+**scroll** -- Page scrolling  
+**match** -- Matching parenthesis, square bracket or curly brace  
 **insert** -- Inserting text  
 **delete** -- Deleting text  
 **change** -- Change text  
