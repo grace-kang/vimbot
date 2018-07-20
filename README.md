@@ -18,4 +18,4 @@ Type one of the following categories and I will list the VIM commands:
 ...**search** -- Search for a phrase
 ...**sub** -- Search and replace
 ...**visual** -- Visual mode
-...**undo** -- Undo and redo
+    **undo** -- Undo and redo
