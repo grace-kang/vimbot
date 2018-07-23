@@ -9,10 +9,12 @@ if (process.env.MONGOLAB_URI) {
   var BotkitStorage = require('botkit-storage-mongo');
   config = {
     storage: BotkitStorage({mongoUri: process.env.MONGOLAB_URI}),
+		retry: 3,
   };
 } else {
   config = {
-    json_file_store: 'db'
+    json_file_store: 'db',
+		retry: 3,
   };
 }
 
@@ -31,12 +33,19 @@ require("fs").readdirSync(normalizedPath).forEach(function(file) {
 
 
 // Handle events related to the websocket connection to Slack
-controller.on('rtm_open', function (bot) {
+controller.on('rtm_open', function (bot, err) {
   console.log('** The RTM api just connected!');
 });
 
-controller.on('rtm_close', function (bot) {
+controller.on('rtm_close', function (err,bot) {
+	if (err) {
+		console.log('RTM close error: ' + err);
+	}
   console.log('** The RTM api just closed');
-  // you may want to attempt to re-open
 });
 
+controller.on('rtm_reconnect_failed', function(bot) {
+	console.log('Error reconnecting to RTM api');
+	let token = bot.config.token;
+	controller.storage.teams.delete(token);
+});
