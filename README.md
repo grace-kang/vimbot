@@ -2,10 +2,12 @@
 Get Vim commands through Slack just by typing a keyword.
 
 ## Usage
-Go to https://grace-kang.github.io/vimbot to add VimBot to your workspace.
+Go to https://grace-kang.github.io/vimbot to add VimBot to your workspace.  
+
+You can interact with VimBot by sending VimBot a direct message or by mentioning VimBot (@VimBot) in a channel (after inviting them into the channel). 
 
 ## Help
-Type one of the following categories and I will list the VIM commands:  
+Type one of the following categories and VimBot will list the VIM commands:  
 >**move** -- Cursor movement  
 **scroll** -- Page scrolling  
 **match** -- Matching parenthesis, square bracket or curly brace  
@@ -19,3 +21,6 @@ Type one of the following categories and I will list the VIM commands:
 **sub** -- Search and replace  
 **visual** -- Visual mode  
 **undo** -- Undo and redo  
+
+##Questions?
+Create an issue if you have any questions, concerns, or requests for this project.
