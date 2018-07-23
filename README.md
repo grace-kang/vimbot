@@ -2,7 +2,7 @@
 Get Vim commands through Slack just by typing a keyword.
 
 ## Usage
-Go to [https://grace-kang.github.io/vimbot] to add VimBot to your workspace.
+Go to https://grace-kang.github.io/vimbot to add VimBot to your workspace.
 
 ## Help
 Type one of the following categories and I will list the VIM commands:  
