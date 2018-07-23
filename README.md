@@ -22,5 +22,5 @@ Type one of the following categories and VimBot will list the VIM commands:
 **visual** -- Visual mode  
 **undo** -- Undo and redo  
 
-##Questions?
+## Questions?
 Create an issue if you have any questions, concerns, or requests for this project.
