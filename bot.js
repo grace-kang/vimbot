@@ -53,5 +53,5 @@ controller.on('rtm_reconnect_failed', function(bot) {
 // Ping app every 5 minutes to keep dyno awake
 var http = require("http");
 setInterval(function() {
-	http.get("https://vimbot.herokuapp.com");
+	http.get("http://vimbot.herokuapp.com");
 }, 300000);
